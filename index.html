@@ -465,11 +465,12 @@
                                                     max-width: 280px;
                                                     margin: auto;
                                                     display: block;" src="product%20(1).png">
-    <h3 id="roulette">Todo lo que tiene que hacer es introducir su nombre y su número de teléfono.<br>Dese prisa! El tiempo está limitado:
+    <h3 id="roulette">Tutto quello che devi fare è inserire il tuo nome e numero di telefono.
+      <br>Sbrigatevi! Il tempo a disposizione:
       <br><span class="time_remains" id="min">30</span> : <span class="time_remains" id="sec">00</span>
     </h3>
     <div class="ruletka-p">
-      <h2>Atención! <br>Tenga cuidado con las falsificaciones!</h2>
+      <h2>Importante! <br>La durata dell'offerta è limitata!</h2>
     </div>
     <div class="order_block" style="display:block">
       <center style="font-size:24px;">
@@ -537,21 +538,18 @@
         }
       </style>
       
-      <form id="order_form" geo="es" action="api.php" method="post" onsubmit="return validate_form(this, 'Por favor ingrese un número de teléfono válido');">
+      <form id="order_form" geo="it" action="api.php" method="post" onsubmit="return validate_form(this, 'Si prega di inserire un numero di telefono valido');">
         
         <input name="subid" type="hidden" value="{subid}">
         <input name="px" type="hidden" value="{px}">
         <input name="bayer" type="hidden" value="{bayer}">
         
-        <label class="form__label" for="" style="font-family: Arial, sans-serif!important;display:block;"> Escribe tu nombre: </label>
-        <input name="name" placeholder="Nombre" type="text" required="" style="font-family: Arial, sans-serif!important;">
         
-        <label class="form__label" for="" style="font-family: Arial, sans-serif!important;display:block;">
-          Teléfono (móvil activo): </label>
-        <input class="only_number" name="phone" placeholder="Teléfono" type="tel" required="" style="font-family: Arial, sans-serif!important;">
+        <input name="name" placeholder="Nome" type="text" required="" style="font-family: Arial, sans-serif!important;">
+        <input class="only_number" name="phone" placeholder="Telefono (cellulare attivo)" type="tel" required="" style="font-family: Arial, sans-serif!important;">
         
         
-        <button class="js_submit button__text" type="submit" style="font-family: Arial, sans-serif!important;"> PEDIR </button>
+        <button class="js_submit button__text" type="submit" style="font-family: Arial, sans-serif!important;"> ORDINA </button>
       </form>
     
     </div>
